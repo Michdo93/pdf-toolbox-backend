@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pdf-toolbox-backend
+    runtime: docker
+    region: frankfurt
+    plan: free # Hinweis: OCR benötigt viel RAM. Für sehr große PDFs kann ein Upgrade auf "Starter" nötig sein.
+    envVars:
+      - key: PORT
+        value: 8080
